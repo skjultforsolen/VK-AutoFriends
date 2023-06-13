@@ -8,7 +8,7 @@ startBtn.addEventListener("click",() => {
         chrome.scripting.executeScript(
             {
                 target:{tabId: tab.id, allFrames: true},
-                func:testt
+                func:startScript
             }
         )
     } else {
