@@ -18,7 +18,6 @@ startBtn.addEventListener("click",() => {
 })
 
 function startScript() {
-  chrome.storage.sync.set({ "buttonValue": "button" });
 
   function checkAndClickButton() {
     const button = document.querySelector('.vkuiIconButton.vkuiIconButton--sizeY-compact.vkuiTappable.vkuiTappable--sizeX-regular.vkuiTappable--hasHover.vkuiTappable--hasActive.vkuiTappable--mouse');
@@ -27,7 +26,7 @@ function startScript() {
     if (button) {
       button.click();
     } else {
-      chrome.storage.sync.set({ "buttonValue": "nobutton" }, function() {
+        chrome.storage.sync.set({ "buttonValue": "nobutton" }, function() {
         console.log("Value updated to 'nobutton'");
         setTimeout(function() {
         location.reload();
