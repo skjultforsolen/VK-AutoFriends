@@ -45,3 +45,4 @@ function startScript() {
   const interval = setInterval(checkAndClickButton, 1000); // Проверять и нажимать кнопку каждую секунду
 }
 
+/* скрипт должен выполнять пока не будет ошибки box layot*/ 
