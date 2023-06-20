@@ -7,7 +7,7 @@
           "matches": [
             "https://vk.com/friends.html"
           ],
-          "js": ["reload.js"]
+          "js": ["<all_urls>"]
         }
       ],
     "version": "2.0",
