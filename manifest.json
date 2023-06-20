@@ -5,9 +5,9 @@
     "content_scripts": [
         {
           "matches": [
-            "https://vk.com/friends.html"
+            "<all_urls>"
           ],
-          "js": ["<all_urls>"]
+          "js": ["reload.js"]
         }
       ],
     "version": "2.0",
